@@ -10,15 +10,17 @@
     <style>
 
         .row{
-            width:720px;
-            margin: 10px auto 10px auto;
-        }
+    width:720px;
+    margin: 10px auto 10px auto;
+    display: table;
+}
 
-        .image-container {
-            display: table-cell;
-            vertical-align: middle;
-            padding:10px;
-        }
+.image-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding:10px;
+}
 
     </style>
 
@@ -120,16 +122,17 @@
         </div>
 
 
-        <img id="img9"
-     src="img/mail.png"
-     width="180"
-     onmousedown="this.src='img/mail2.png';"
-     onmouseup="this.src='img/mail.png';"
+       <div class="image-container">
+    <img id="img9"
+         src="img/mail.png"
+         width="225"
+         onmousedown="this.src='img/mail2.png';"
+         onmouseup="this.src='img/mail.png';"
+    />
+</div>
 
-            />
-        </div>
-
-    </div>
+</div>
+        
 
 
 
