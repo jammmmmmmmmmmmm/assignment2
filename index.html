@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Dream Icons</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+
+    <style>
+
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto;
+        }
+
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding:10px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="row">
+
+        <div class="image-container">
+            <img id="img1"
+                 src="img/home.png"
+                 height="200"
+                 onmousedown="this.src='img/home2.png';"
+                 onmouseup="this.src='img/home.png';"
+            />
+        </div>
+
+
+        <div class="image-container">
+            <img id="img2"
+                 src="img/dream.png"
+                 height="160"
+                 onmousedown="this.src='img/dream2.png';"
+                 onmouseup="this.src='img/dream.png';"
+            />
+        </div>
+
+
+        <div class="image-container">
+            <img id="img3"
+                 src="img/profile.png"
+                 height="190"
+                 onmousedown="this.src='img/profile2.png';"
+                 onmouseup="this.src='img/profile.png';"
+            />
+        </div>
+
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="image-container">
+            <img id="img4"
+                 src="img/discover.png"
+                 height="180"
+                 onmousedown="this.src='img/discover2.png';"
+                 onmouseup="this.src='img/discover.png';"
+            />
+        </div>
+
+
+        <div class="image-container">
+            <img id="img5"
+                 src="img/replay.png"
+                 height="190"
+                 onmousedown="this.src='img/replay2.png';"
+                 onmouseup="this.src='img/replay.png';"
+            />
+        </div>
+
+
+        <div class="image-container">
+            <img id="img6"
+                 src="img/friends.png"
+                 height="180"
+                 onmousedown="this.src='img/friends2.png';"
+                 onmouseup="this.src='img/friends.png';"
+            />
+        </div>
+
+    </div>
+
+
+
+    <div class="row">
+
+        <div class="image-container">
+            <img id="img7"
+                 src="img/files.png"
+                 height="180"
+                 onmousedown="this.src='img/files2.png';"
+                 onmouseup="this.src='img/files.png';"
+            />
+        </div>
+
+
+        <div class="image-container">
+            <img id="img8"
+                 src="img/share.png"
+                 height="175"
+                 onmousedown="this.src='img/share2.png';"
+                 onmouseup="this.src='img/share.png';"
+            />
+        </div>
+
+
+        <img id="img9"
+     src="img/mail.png"
+     width="180"
+     onmousedown="this.src='img/mail2.png';"
+     onmouseup="this.src='img/mail.png';"
+
+            />
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        var sound1 = new buzz.sound("sounds/home.mp3");
+        var sound2 = new buzz.sound("sounds/record.mp3");
+        var sound3 = new buzz.sound("sounds/profile.mp3");
+        var sound4 = new buzz.sound("sounds/discover.mp3");
+        var sound5 = new buzz.sound("sounds/replay.mp3");
+        var sound6 = new buzz.sound("sounds/friends.mp3");
+        var sound7 = new buzz.sound("sounds/dreamlibrary.mp3");
+        var sound8 = new buzz.sound("sounds/share.mp3");
+        var sound9 = new buzz.sound("sounds/mail.mp3");
+
+
+        window.onload = function() {
+
+            document.getElementById('img1').addEventListener('click', function () {sound1.play(); });
+            document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+            document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+            document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+            document.getElementById('img5').addEventListener('click', function () {sound5.play(); });
+            document.getElementById('img6').addEventListener('click', function () {sound6.play(); });
+            document.getElementById('img7').addEventListener('click', function () {sound7.play(); });
+            document.getElementById('img8').addEventListener('click', function () {sound8.play(); });
+            document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
